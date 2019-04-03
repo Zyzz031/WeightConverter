@@ -124,11 +124,13 @@ function setConversion(type, valueType, formulas) {
 
 // Reset Values
 function resetValues(elementsToBeRemoved) {
+  // Set output to view
   document.getElementById("grams").style.display = "block";
   document.getElementById("kilograms").style.display = "block";
   document.getElementById("ounces").style.display = "block";
   document.getElementById("pounds").style.display = "block";
 
+  // Set current type to display none
   document.getElementById(elementsToBeRemoved).style.display = "none";
 
   typeInput.value = "";
